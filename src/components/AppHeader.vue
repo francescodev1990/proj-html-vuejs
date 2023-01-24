@@ -23,11 +23,6 @@ export default {
           url: "#",
           active: false,
         },
-        {
-          label: "DONATE",
-          url: "#",
-          active: false,
-        },
       ],
     };
   },
@@ -49,6 +44,9 @@ export default {
         </li>
       </ul>
     </nav>
+    <button>
+      <p>Donate</p> 
+    </button>
   </header>
 </template>
 
@@ -68,5 +66,14 @@ ul {
 ul li {
   padding: 25px;
   margin-left: 2px;
+}
+button {
+  background-color: #fec96b;
+  font-size: 20px;
+  border-radius: 7px;
+  padding: 20px;
+  color: white;
+  height: 25px;
+  margin: 15px;
 }
 </style>
