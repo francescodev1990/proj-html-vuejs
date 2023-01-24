@@ -31,6 +31,9 @@ export default {
 
 
 <template lang="">
+
+<!-- INIZIO HEADER -->
+
   <header>
     <a href="/" class = "brand">
       <img src="../assets/images/avada-logo.png">
@@ -55,10 +58,11 @@ export default {
 <style lang="scss">
 header {
   text-align: center;
-  margin-top: 25px;
   display: flex;
   justify-content: space-around;
+  background-image: url(../assets/images/jumbo.jpeg);
 }
+
 ul {
   list-style-type: none;
   display: flex;
@@ -66,11 +70,27 @@ ul {
 ul li {
   padding: 25px;
   margin-left: 2px;
+  display: flex;
+  justify-content: flex-end;
+}
+li a {
+  display: inline-block;
+  padding: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+  color: white;
+
+  &.active,
+  &:hover {
+    border-bottom: 4px solid white;
+  }
 }
 button {
   background-color: #fec96b;
   font-size: 20px;
   border-radius: 7px;
+  border: none;
   padding: 20px;
   color: white;
   height: 25px;
