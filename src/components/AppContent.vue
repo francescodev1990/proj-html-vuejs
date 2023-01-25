@@ -33,6 +33,43 @@ export default {
         sottotitolo:
           "As long as poverty, injustice & inequality persist, none of us can truly rest. It doesnt't take much to change a life. Get in touch today and start making the difference.",
       },
+      iconCard: [
+        {
+          thumb: "",
+          titolo: "Clean Water",
+          sottotitolo:
+            "Nullam convallis, orci in conge aliquet diam diam diam foro",
+        },
+        {
+          thumb: "",
+          titolo: "Vaccinations",
+          testo: "Nullam convallis, orci in conge aliquet diam diam diam foro",
+        },
+        {
+          thumb: "",
+          titolo: "Education",
+          testo: "Nullam convallis, orci in conge aliquet diam diam diam foro",
+        },
+        {
+          thumb: "",
+          titolo: "Farming",
+          testo: "Nullam convallis, orci in conge aliquet diam diam diam foro",
+        },
+      ],
+      fotoCard: [
+        {
+          thumb: "/images/HelloIMG1669149314369.png",
+        },
+        {
+          thumb: "/images/HelloIMG1669149314987.png",
+        },
+        {
+          thumb: "/images/HelloIMG1669149317319.jpeg",
+        },
+        {
+          thumb: "/images/HelloIMG1669149318263.jpeg",
+        },
+      ],
     };
   },
 };
