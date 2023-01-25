@@ -36,27 +36,46 @@ export default {
 
   <header>
     <a href="/" class = "brand">
-      <img src="../assets/images/avada-logo.png">
+      <img class="logo" src="../assets/images/avada-logo.png">
     </a>
     <nav>
       <ul>
-        <li v-for = "(item, index) in menu" ::key = "i">
+        <li v-for = "(item, index) in menu" :key = "index">
           <a :href="item.url" :class = "item.active ? 'active' :''"> {{item.label}}
           </a>
 
         </li>
       </ul>
     </nav>
-    <button>
-      <p>Donate</p> 
-    </button>
+    <button class="header-button">
+        DONATE
+      </button>
   </header>
 </template>
 
 
 
 <style lang="scss">
+.logo {
+  margin-top: 30px;
+}
+.header-button {
+  vertical-align: middle;
+  padding: 0;
+  width: 150px;
+  height: 50px;
+  background-color: #fec96b;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 7px;
+  border: none;
+  color: white;
+}
+
 header {
+  width: 100%;
+  top: 0;
+  position: fixed;
   text-align: center;
   display: flex;
   justify-content: space-around;
